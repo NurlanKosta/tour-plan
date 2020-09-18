@@ -496,7 +496,7 @@ template {
     padding-bottom: 29px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 43px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -507,7 +507,7 @@ template {
     line-height: 15px;
   }
   .search__input {
-    width: 310px;
+    width: 340px;
   }
   .search__button {
     cursor: pointer;
