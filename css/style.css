@@ -507,14 +507,14 @@ template {
     line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    width: 310px;
   }
   .search__button {
     cursor: pointer;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .container {
     max-width: 572px;
     width: 90%;
