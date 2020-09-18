@@ -4,12 +4,13 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+    width: 90%
   .logo
     width: 132px  
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 40px
+      padding-bottom: 29px
     &__search
       margin-left: auto
     &-menu
@@ -20,14 +21,20 @@
         line-height: 15px
   .search
     &__input
-      width: 340px        
-@media (max-width: 768px)
+      width: 340px
+    &__button
+      cursor: pointer
+@media (max-width: 769px)
   .container
     max-width: 572px
-    width: 92%
+    width: 90%
+  .logo
+    width: 130px 
   .navbar
     &__search, &-menu, &__user
-      display: none   
+      display: none
+    &-top
+      padding-bottom: 29px     
   .menu
     &-button
       display: flex
@@ -45,8 +52,14 @@
         height: 1px
         background-color: $text-color
 @media ( max-width: 576px )
+  .container
+    max-width: 572px
+    width: 88%
   .logo
     width: 99px
+  .navbar
+    &-top
+      padding-top: 24px
           
 
           
