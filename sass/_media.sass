@@ -1,7 +1,7 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .hotel__slide
+  .hotel__slider
     width: 590px
   .hotel
     &-slider
@@ -13,7 +13,7 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
-    width: 92%
+    width: 93%
   .logo
     width: 132px  
   .navbar
@@ -51,6 +51,20 @@
     &-slider
       &__item
         max-width: 580px
+      &__button
+        top: 46%
+        &--prev
+          left: 0px
+        &--next
+          right: 0px
+    &__title
+      margin-bottom: 49px
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+  .newsletter
+    padding: 60px 0 74px 0
 @media (max-width: 767px)
   .container
     max-width: 572px
@@ -145,15 +159,25 @@
       margin-bottom: 20px
     &-slider
       height: 180px
+      &__button
+        width: 10px
+        height: 10px
+        top: 45%
+        &--prev
+          left: 10px
+        &--next
+          right: 10px
     &-info
       padding-bottom: 25px
+      &__text
+        padding-bottom: 5px
     &-right
-      min-height: 415px
+      min-height: 403px
   .map
-    height: 180px
+    height: 173px
   .newsletter
     height: 319px
-    padding: 76px 0 83px 0
+    padding: 64px 0 66px 0
     &__title
       margin-bottom: 37px
       font-style: normal
@@ -168,6 +192,33 @@
         line-height: 38px
   .subscribe
     width: 100%
+  .reviews
+    padding: 40px 0 70px 
+    &__title
+      width: 245px
+      padding-left: 35px
+      margin-bottom: 45px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after,&:before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 40%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 40%
+          margin-right: -65px
+          transform: translate(50%, 0)
 
           
 
