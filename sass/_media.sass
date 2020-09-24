@@ -109,7 +109,8 @@
       flex-direction: column
       align-items: flex-start
 @media ( max-width: 576px )
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 572px
     width: 88%
   .logo
@@ -120,12 +121,30 @@
   .slider
     height: 180px
   .hotel
+    padding-bottom: 40px
     &__slider
       margin-bottom: 20px
+    &-info
+      padding-bottom: 25px
+    &-right
+      min-height: 415px
+  .map
+    height: 180px
   .newsletter
+    height: 319px
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+    &-title
+      &__strong
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
   .subscribe
     width: 100%
 
