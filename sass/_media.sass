@@ -35,6 +35,7 @@
       cursor: pointer
   .hotel
     padding-top: 13px
+    padding-bottom: 60px 
     &-grid
       flex-direction: column
     &__slider
@@ -64,7 +65,7 @@
       font-size: 30px
       line-height: 38px
   .newsletter
-    padding: 60px 0 74px 0
+    padding: 70px 0 75px 0
 @media (max-width: 767px)
   .container
     max-width: 572px
@@ -195,8 +196,6 @@
   .reviews
     padding: 40px 0 70px 
     &__title
-      width: 245px
-      padding-left: 35px
       margin-bottom: 45px
       font-style: normal
       font-weight: bold
@@ -205,6 +204,8 @@
       text-align: center
       text-transform: uppercase
     &-slider
+      &__text
+        text-align: revert
       &__item
         padding: 0 30px 30px
         &:after,&:before
@@ -219,7 +220,19 @@
           right: 40%
           margin-right: -65px
           transform: translate(50%, 0)
-
+@media ( max-width: 325px )
+  .reviews
+    padding: 40px 0 70px 
+    &__title
+      width: 245px
+      padding-left: 35px
+      margin-bottom: 45px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
           
 
           

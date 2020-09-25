@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -892,6 +896,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: red;
 }
 
 .subscribe__button {
@@ -903,6 +908,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -1095,6 +1104,7 @@ template {
   }
   .hotel {
     padding-top: 13px;
+    padding-bottom: 60px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1140,7 +1150,7 @@ template {
     line-height: 38px;
   }
   .newsletter {
-    padding: 60px 0 74px 0;
+    padding: 70px 0 75px 0;
   }
 }
 
@@ -1333,8 +1343,6 @@ template {
     padding: 40px 0 70px;
   }
   .reviews__title {
-    width: 245px;
-    padding-left: 35px;
     margin-bottom: 45px;
     font-style: normal;
     font-weight: bold;
@@ -1342,6 +1350,9 @@ template {
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
+  }
+  .reviews-slider__text {
+    text-align: revert;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1363,6 +1374,23 @@ template {
     margin-right: -65px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+  }
+}
+
+@media (max-width: 325px) {
+  .reviews {
+    padding: 40px 0 70px;
+  }
+  .reviews__title {
+    width: 245px;
+    padding-left: 35px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=style.css.map */
