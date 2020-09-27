@@ -1145,6 +1145,10 @@ template {
   cursor: pointer;
 }
 
+.card__title-3 {
+  margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1257,6 +1261,9 @@ template {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .card__title {
+    width: 200px;
   }
 }
 
