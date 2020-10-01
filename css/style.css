@@ -436,6 +436,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
   height: auto;
@@ -1603,11 +1607,65 @@ template {
     max-width: 572px;
     width: 95%;
   }
+  body {
+    padding-top: 78px;
+  }
   .logo {
     width: 130px;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__search--mobile_visible {
+    width: 244px;
+    margin: 0px;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+    margin-bottom: 27px;
   }
   .navbar-top {
     padding-bottom: 29px;
@@ -1637,6 +1695,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
@@ -1949,7 +2012,7 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
-    width: 500px;
+    width: 400px;
   }
   .footer__message {
     -webkit-box-ordinal-group: 1;
@@ -1992,7 +2055,7 @@ template {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container,
   .newsletter-wrapper {
     max-width: 572px;
