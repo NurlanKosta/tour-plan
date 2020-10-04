@@ -29,11 +29,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'fatmaxkz@gmail.com'; // Логин на почте
-    $mail->Password   = 'Drogba11'; // Пароль на почте
+    $mail->Username   = 'besttour101@gmail.com'; // Логин на почте
+    $mail->Password   = 'BestTour2020'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('fatmaxkz@gmail.com', 'Нурлан Джунусов'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('besttour101@gmail.com', 'Нурлан Джунусов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('djunus-93@mail.ru');
