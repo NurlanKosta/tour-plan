@@ -494,6 +494,7 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -674,6 +675,21 @@ template {
 .hotel-slider__button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.back__button {
+  width: 100px;
+  margin-top: 20px;
+  min-height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .swiper-container {
@@ -951,6 +967,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1385,6 +1402,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1428,6 +1446,10 @@ template {
   text-align: right;
 }
 
+.modal {
+  overflow-y: scroll;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1463,6 +1485,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
+  overflow-y: scroll;
 }
 
 .modal__dialog--visible {
@@ -1524,6 +1547,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal__message {
