@@ -21,7 +21,7 @@
     max-width: 700px
     width: 93%
   .logo
-    width: 132px  
+    width: 132px
   .navbar
     &-top
       padding-top: 30px
@@ -41,7 +41,7 @@
       cursor: pointer
   .hotel
     padding-top: 13px
-    padding-bottom: 60px 
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
@@ -77,7 +77,7 @@
     &-wrapper
       flex-wrap: wrap
     &__card
-      margin-bottom: 20px 
+      margin-bottom: 20px
   .card
     width: 340px
     height: 255px
@@ -92,7 +92,7 @@
       grid-row-gap: 40px
     &__logo
       grid-row: 1
-      grid-column: 
+      grid-column:
       width: 94px
       padding: 0
     &__social
@@ -125,6 +125,13 @@
     &__menu
       padding-top: 58px
       margin-bottom: 0
+  .modal
+    &__button
+      order: 1
+    &__info
+      width: 200px
+      order: 0
+      margin-bottom: 10px
 @media (max-width: 767px)
   .container
     max-width: 572px
@@ -132,7 +139,7 @@
   body
     padding-top: 78px
   .logo
-    width: 130px 
+    width: 130px
   .navbar
     &__mobile
       &--fixed
@@ -162,7 +169,7 @@
       right: 0
       bottom: 0
       top: 70px
-      padding-top: 30px 
+      padding-top: 30px
       &--visible
         display: block
         overflow-y: scroll
@@ -176,7 +183,7 @@
             display: block
             margin-bottom: 27px
     &-top
-      padding-bottom: 29px     
+      padding-bottom: 29px
   .menu
     &-button
       display: flex
@@ -216,8 +223,7 @@
         display: none
       &__offer
         order: -1
-        margin-left: 0  
-  
+        margin-left: 0
   .hotel
     &-right
       flex-direction: column
@@ -316,7 +322,7 @@
   .subscribe
     width: 100%
   .reviews
-    padding: 40px 0 70px 
+    padding: 40px 0 70px
     &__title
       margin-bottom: 45px
       font-style: normal
@@ -433,6 +439,15 @@
         padding-top: 0px
       &-link
         margin: 0
+  .modal
+    &__dialog
+      overflow-y: scroll
+      max-height: 100%
+    &__button
+      order: 1
+    &__info
+      order: 0
+      margin-bottom: 10px
 @media ( max-width: 500px )
   .container,
   .newsletter-wrapper
@@ -483,7 +498,7 @@
   .subscribe
     width: 100%
   .reviews
-    padding: 40px 0 70px 
+    padding: 40px 0 70px
     &__title
       margin-bottom: 45px
       font-style: normal
@@ -599,10 +614,15 @@
       &-pay
         padding-top: 8px
       &-link
-        margin: 0      
+        margin: 0
+@media ( max-width: 380px )
+  .modal
+    &__dialog
+      padding: 25px 25px
+      width: 90%
 @media ( max-width: 325px )
   .reviews
-    padding: 40px 0 70px 
+    padding: 40px 0 70px
     &__title
       width: 245px
       padding-left: 35px
@@ -613,7 +633,3 @@
       line-height: 23px
       text-align: center
       text-transform: uppercase
-          
-
-          
-
