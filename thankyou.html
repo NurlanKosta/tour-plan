@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar__mobile-fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo">
@@ -98,7 +98,7 @@
             <h1 class="hotel-name hotel-info__name">Message sent!</h1>
           </div>
           <p class="hotel-description hotel-info__description">Our manager will call you in five minutes.</p>
-          <button class="back__button"><a class="back__button" href="index.html">Home</a></button>
+          <a class="back__button" href="index.html"><button class="back__button">Home</button></a>
         </div>
         <!-- /.hotel-ingo__text -->
       </div>
@@ -175,11 +175,13 @@
             </li>
             <li class="footer__item footer__item-mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg"
-                  alt="icon: phone"></div><a class="footer__number" href="tel:12100">Tel
-                (business hours) : 269
-                1500 <br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a>
+                  alt="icon: phone"></div>
+                  <p class="footer__contact-text">
+                Tel (business hours) : <a href="tel:2691500">269 1500</a> <br />
+                Tel (hotline) Monday - Saturday: 
+                <span class="nowrap"> <a href="tel:2691500">52-56-61-38</a> (08:00 am – 20:00 pm)</span><br />
+                Tel (hotline) Sunday: <a href="tel:2691500">52-56-61-38</a> (08:00 am – 14:00 pm)
+                </p>
             </li>
             <li class="footer__item footer__item-mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="icon: email"></div>
@@ -188,12 +190,14 @@
           </ul>
         </div>
         <!-- /.footer__contact-deteils -->
-        <div class="footer__contact-form">
+       <div class="footer__contact-form">
           <h3 class="footer__title  footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group"><input type="text" class="input footer__input"
+                placeholder="Your Full Name*" name="name" required minlength="2"></div>
+            <div class="footer__input-group"><input type="tel" class="input footer__input phone"
+                placeholder="Phone Number*" name="phone" required minlength="17"></div>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
